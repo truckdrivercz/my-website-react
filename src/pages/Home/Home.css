@@ -1,0 +1,123 @@
+* {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+  
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .secondTitle {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  #flexWrap {
+    margin-top: 105vh;
+    height: 100%;
+    display: flex;
+  }
+  
+  #firstWrap,
+  #secondWrap {
+    flex-basis: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  #firstWrap p,
+  #secondWrap p {
+    font-size: 15px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  #firstWrap .title,
+  #secondWrap .title {
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+  }
+  
+  #firstWrap .secondTitle,
+  #secondWrap .secondTitle {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+  }
+  
+  #informations,
+  #achievements {
+    height: 300px;
+    font-size: 15px;
+    background-color: rgb(80, 1, 1);
+    color: white;
+    border-radius: 30px;
+  }
+  
+  #informations,
+  #requirements {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    #flexWrap {
+        margin-top: 350px;
+        display: block;
+      }
+    
+      #informations,
+      #achievements {
+        margin-bottom: 50px;
+      }
+    
+      #informations,
+      #achievements {
+        height: auto;
+        border-radius: 0px;
+        padding-bottom: 10px;
+      }
+
+      #firstWrap p,
+      #secondWrap p {
+        font-size: 16px;
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+}
+
+  @media screen and (max-width: 576px) {
+    #flexWrap {
+        display: block;
+        margin-top: 350px;
+        max-width: 100%;
+        width: 100%;
+      }
+  
+    #informations,
+    #achievements {
+      margin-top: 50px;
+      border-radius: 0px;
+      height: auto;
+      padding-bottom: 10px;
+    }
+
+    #firstWrap p,
+    #secondWrap p {
+      font-size: 16px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }

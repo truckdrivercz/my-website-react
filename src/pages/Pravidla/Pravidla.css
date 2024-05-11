@@ -1,0 +1,121 @@
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.secondTitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#wrap {
+  margin-top: 100vh;
+  height: 100%;
+  display: flex;
+}
+
+#rules,
+#rules2 {
+  flex-basis: 50%;
+  padding: 30px;
+  margin: 30px;
+}
+
+#rules a,
+#rules2 a {
+  color: red;
+  text-decoration: underline;
+}
+
+#rules p,
+#rules2 p {
+  font-size: 15px;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#rules .title,
+#rules2 .title {
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+#rules .secondTitle,
+#rules2 .secondTitle {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+#rules,
+#rules2 {
+  height: auto;
+  font-size: 16px;
+  background-color: rgb(80, 1, 1);
+  color: white;
+  border-radius: 30px;
+}
+
+
+@media screen and (max-width: 1200px) {
+  #wrap {
+    display: block;
+    margin-top: 350px;
+  }
+  #rules,
+  #rules2 {
+    border-radius: 0px;
+    padding-bottom: 10px;
+  }
+  #rules p,
+  #rules2 p {
+    font-size: 16px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #rules,
+  #rules2 {
+    margin-bottom: 10px;
+    border-radius: 0px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #wrap {
+    display: block;
+    margin-top: 350px;
+  }
+  #rules p,
+  #rules2 p {
+    font-size: 17.5px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #rules,
+  #rules2 {
+    padding-bottom: 10px;
+  }
+
+  #rules,
+  #rules2 {
+    border-radius: 0px;
+  }
+}

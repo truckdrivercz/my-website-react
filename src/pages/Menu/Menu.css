@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "futura md bt";
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+    top: 40px;
+    background: rgb(80, 1, 1);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    z-index: 999999;
+}
+
+header .logo {
+    font-size: 30px;
+    text-transform: uppercase;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.logo a:hover {
+    background-color: unset;
+}
+
+header ul li {
+    font-size: 20px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li a {
+    display: inline-block;
+    color: white;
+    padding: 5px 0;
+    margin: 0 10px;
+    border: 3px solid transparent;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    border-bottom-color: dodgerblue;
+}
+
+header ul li a img {
+    display: flex;
+    height: 25px;
+}
+
+a {
+    color: white;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: white;
+    transition: transform 0.3s ease; /* PĹ™idĂˇme transition pro plynulĂ˝ efekt */
+}
+
+/* Po kliknutĂ­ na hamburger se kaĹľdĂ˝ prvek otoÄŤĂ­ do kĹ™Ă­Ĺľe */
+#nav_check:checked ~ .hamburger div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#nav_check:checked ~ .hamburger div:nth-child(2) {
+    opacity: 0;
+}
+
+#nav_check:checked ~ .hamburger div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+footer {
+    margin-top: 100px;
+    background-color: rgb(80, 1, 1);
+    color: white;
+    padding: 50px 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer a {
+    color: red;
+    background-color: unset;
+}
+
+@media only screen and (max-width: 1550px) {
+    .hamburger {
+        display: block;
+    }
+
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 70px;
+        width: 100%;
+        background: rgb(80, 1, 1);
+        padding: 30px;
+        transition: 0.3s;
+        z-index: 999999999;
+    }
+
+    header #nav_check:checked ~ nav {
+        left: 0;
+    }
+
+    header nav ul {
+        display: block;
+    }
+
+    header nav ul li a {
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #footerTitle {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .logo a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #footerTitle {
+        font-size: 15px;
+    }
+}
