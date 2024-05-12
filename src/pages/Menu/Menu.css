@@ -90,21 +90,7 @@ a {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-footer {
-    margin-top: 100px;
-    background-color: rgb(80, 1, 1);
-    color: white;
-    padding: 50px 30px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-#footer a {
-    color: red;
-    background-color: unset;
-}
 
 @media only screen and (max-width: 1550px) {
     .hamburger {
@@ -136,12 +122,6 @@ footer {
     }
 }
 
-@media screen and (max-width: 1200px) {
-    #footerTitle {
-        font-size: 22px;
-    }
-}
-
 @media only screen and (max-width: 900px) {
     header {
         padding: 0 30px;
@@ -150,12 +130,6 @@ footer {
 
 @media screen and (max-width: 800px) {
     .logo a {
-        font-size: 15px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    #footerTitle {
         font-size: 15px;
     }
 }

@@ -1,16 +1,15 @@
-import "../Css/Flags.css";
-import "../Css/Style.css";
-import "../Js/Dark_mode";
+import Animation from "../AnimationFrames/Animation";
 import Menu from "../Menu/Menu";
-import Animation from "../Animation/Animation";
-import "./Home.css";
-import "./Index";
-import Footer from "../Menu/Footer";
+import Footer from "../Footer/Footer";
+import "../Css/Flags.css"
+import "../Css/Style.css"
+import "../AnimationFrames/Animation"
+import "./Home.css"
 export default function Home() {
   return (
     <>
-      <Menu />
-      <Animation />
+    <Menu/>
+    <Animation/>
       <div id="flexWrap">
         <div id="firstWrap">
           <div id="informations">
@@ -36,11 +35,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <Footer/>
-      
-      <script src="../Js/Dark_mode.js"></script>
-      <script src="../Js/Index.js"></script>
     </>
   );
 }

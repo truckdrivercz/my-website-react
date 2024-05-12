@@ -1,29 +1,28 @@
 import "./Menu.css";
-
 export default function Menu() {
   return (
     <>
       <div className="flags">
         <div className="language-selector">
           <div className="selected-language">
-            <img src="../logos/Flag_of_the_Czech_Republic.svg" alt="Czech Republic" />
+            <img src="../Logos/Flag_of_the_Czech_Republic.svg" alt="Czech Republic" />
           </div>
           <div className="arrow-down"></div>
           <div className="language-options">
             <div className="language-option" data-lang="cz">
-              <img src="../logos/Flag_of_the_Czech_Republic.svg" alt="Čeština" />
+              <img src="../Logos/Flag_of_the_Czech_Republic.svg" alt="Čeština" />
               <span>Čeština</span>
             </div>
             <div className="language-option" data-lang="en">
-              <img src="../logos/Flag-United-Kingdom.png" alt="English" />
+              <img src="../Logos/Flag-United-Kingdom.png" alt="English" />
               <span>English</span>
             </div>
             <div className="language-option" data-lang="de">
-              <img src="../logos/Flag_Germany.png" alt="Germany" />
+              <img src="../Logos/Flag_Germany.png" alt="Germany" />
               <span>Germany</span>
             </div>
             <div className="language-option" data-lang="pl">
-              <img src="../logos/polskokopie.png" alt="Polski" />
+              <img src="../Logos/polskokopie.png" alt="Polski" />
               <span>Polski</span>
             </div>
           </div>
@@ -39,70 +38,70 @@ export default function Menu() {
 
       <header>
         <div className="logo">
-          <a href="index.html">VTC Hell Riders</a>
+          <a href="../Home/Home.jsx">VTC Hell Riders</a>
         </div>
 
         <input type="checkbox" id="nav_check" hidden />
         <nav>
           <ul>
             <li>
-              <a href="index.html" className="active" id="uvod-1">
+              <a href="../Home/Home.jsx" className="active" id="uvod-1">
                 Úvod
               </a>
             </li>
             <li>
-              <a href="pravidla.html" id="pravidla-1">
+              <a href="../Pravidla/Pravidla.jsx" id="pravidla-1">
                 Pravidla
               </a>
             </li>
             <li>
-              <a href="nabor.html" id="nabor-1">
+              <a href="../Nábor/Nabor.jsx" id="nabor-1">
                 Nábor
               </a>
             </li>
             <li>
-              <a href="konvoje.html" id="konvoje-1">
+              <a href="../Konvoje/Konvoje.jsx" id="konvoje-1">
                 Konvoje
               </a>
             </li>
             <li>
-              <a href="kontakty.html" id="kontakty-1">
+              <a href="../Kontakty/Kontakty.jsx" id="kontakty-1">
                 Kontakty
               </a>
             </li>
             <li>
-              <a href="galerie.html" id="galerie-1">
+              <a href="../Galerie/Galerie.jsx" id="galerie-1">
                 Galerie
               </a>
             </li>
             <li>
               <a href="https://discord.gg/nJ6tbtjbPx">
-                <img src="../logos/dis_bile_logo.png" alt="Discord" />
+                <img src="../Logos/dis_bile_logo.png" alt="Discord" />
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/vtc_hell_riders/">
-                <img src="../logos/ig_bile_logo.png" alt="Instagram" />
+                <img src="../Logos/ig_bile_logo.png" alt="Instagram" />
               </a>
             </li>
             <li>
               <a href="https://trucksbook.eu/company/133784">
-                <img className="tb" src="../logos/trucksbook.png" alt="TrucksBook" />
+                <img src="../Logos/trucksbook.png" alt="TrucksBook" />
               </a>
             </li>
             <li>
               <a href="https://www.twitch.tv/lucianusshow">
-                <img src="../logos/cernytwitch_logo_jde_do_biliho.png" alt="Twitch" />
+                <img src="../Logos/cernytwitch_logo_jde_do_biliho.png" alt="Twitch" />
               </a>
             </li>
             <li>
               <a href="https://www.youtube.com/@lucianusshow2942">
-                <img src="../logos/ytb_bile_logo.png" alt="YouTube" />
+                <img src="../Logos/ytb_bile_logo.png" alt="YouTube" />
               </a>
             </li>
             <li>
               <a href="https://truckersmp.com/vtc/56889">
-                <img className="tmp" src="../logos/tmp.png" alt="TruckersMP" />
+                <img src="../Logos/tmp.png" alt="TruckersMP" />
               </a>
             </li>
           </ul>
