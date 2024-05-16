@@ -1,13 +1,13 @@
 import Animation from "../AnimationFrames/Animation";
 import Menu from "../Menu/Menu";
 import Footer from "../Footer/Footer";
-import "../Css/Flags.css"
-import "../Css/Style.css"
+import Flags_dark from "../Flag_dark/Flags_dark";
 import "../AnimationFrames/Animation"
 import "./Home.css"
 export default function Home() {
   return (
     <>
+    <Flags_dark/>
     <Menu/>
     <Animation/>
       <div id="flexWrap">

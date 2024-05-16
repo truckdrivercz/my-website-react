@@ -1,6 +1,6 @@
 import "./Galerie.css"
-import Footer from "../Footer/Footer" 
 import Menu from"../Menu/Menu"
+import Footer from "../Footer/Footer" 
 
 export default function Galerie(){
     return(
@@ -40,7 +40,6 @@ export default function Galerie(){
         </div>
     </div>
 </div>
-
         <Footer/>
         </>
     )
