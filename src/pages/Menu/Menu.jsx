@@ -43,32 +43,32 @@ export default function Menu() {
             </li>
             <li>
               <a href="https://discord.gg/nJ6tbtjbPx">
-                <img src="../Logos/dis_bile_logo.png" alt="Discord" />
+              <img src="../Logos/Dis_bile_logo.png"/>
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/vtc_hell_riders/">
-                <img src="../Logos/ig_bile_logo.png" alt="Instagram" />
+                <img src="../Logos/Ig_bile_logo.png"/>
               </a>
             </li>
             <li>
               <a href="https://trucksbook.eu/company/133784">
-                <img src="../Logos/trucksbook.png" alt="TrucksBook" />
+                <img src="../Logos/Trucksbook.png"/>
               </a>
             </li>
             <li>
               <a href="https://www.twitch.tv/lucianusshow">
-                <img src="../Logos/cernytwitch_logo_jde_do_biliho.png" alt="Twitch" />
+                <img src="../Logos/Cernytwitch_logo_jde_do_biliho.png"/>
               </a>
             </li>
             <li>
               <a href="https://www.youtube.com/@lucianusshow2942">
-                <img src="../Logos/ytb_bile_logo.png" alt="YouTube" />
+                <img src="../Logos/Ytb_bile_logo.png"/>
               </a>
             </li>
             <li>
               <a href="https://truckersmp.com/vtc/56889">
-                <img src="../Logos/tmp.png" alt="TruckersMP" />
+                <img src="../Logos/Tmp.png"/>
               </a>
             </li>
           </ul>
