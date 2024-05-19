@@ -2,7 +2,6 @@ import Animation from "../AnimationFrames/Animation";
 import Menu from "../Menu/Menu";
 import Footer from "../Footer/Footer";
 import Flags_dark from "../Flag_dark/Flags_dark";
-import "../AnimationFrames/Animation"
 import "./Home.css"
 export default function Home() {
   return (

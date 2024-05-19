@@ -1,20 +1,14 @@
-export const Koonvoje = () =>{
+export const Konvoje = () => {
     document.addEventListener("DOMContentLoaded", function() {
         const selector = document.querySelector(".language-selector");
         const options = document.querySelector(".language-options");
         const arrowDown = document.querySelector(".arrow-down");
         const flagImages = document.querySelectorAll(".language-option img");
-    
+
         let selectedLanguage = localStorage.getItem('selectedLanguage') || 'cz'; // Výchozí jazyk
-    
-        // Funkce pro překlad textů
-    
-    
+
         // Textové překlady pro konvoje
-        const translations = {  
-      
-    
-            
+        const translations = {
             'Datum: 5. 5. 2024': {
                 'cz': 'Datum: 5. 5. 2024',
                 'en': 'Date: 5th May 2024',
@@ -27,26 +21,13 @@ export const Koonvoje = () =>{
                 'de': 'Datum: 5. 5. 2024',
                 'pl': 'Data: 5 maja 2024'
             },
-            'Datum: 5. 5. 2024': {
-                'cz': 'Datum: 5. 5. 2024',
-                'en': 'Date: 5th May 2024',
-                'de': 'Datum: 5. 5. 2024',
-                'pl': 'Data: 5 maja 2024'
-            },
             'Data: 5 maja 2024': {
                 'cz': 'Datum: 5. 5. 2024',
                 'en': 'Date: 5th May 2024',
                 'de': 'Datum: 5. 5. 2024',
                 'pl': 'Data: 5 maja 2024'
             },
-    
             'Začátek: Lyon (Stain Bruch)': {
-                'cz': 'Začátek: Lyon (Stain Bruch)',
-                'en': 'Start: Lyon (Stain Bruch)',
-                'de': 'Start: Lyon (Stain Bruch)',
-                'pl': 'Początek: Lyon (Stain Bruch)'
-            },
-            'Start: Lyon (Stain Bruch)': {
                 'cz': 'Začátek: Lyon (Stain Bruch)',
                 'en': 'Start: Lyon (Stain Bruch)',
                 'de': 'Start: Lyon (Stain Bruch)',
@@ -64,7 +45,6 @@ export const Koonvoje = () =>{
                 'de': 'Start: Lyon (Stain Bruch)',
                 'pl': 'Początek: Lyon (Stain Bruch)'
             },
-            
             'Cíl: Calais (Port)': {
                 'cz': 'Cíl: Calais (Port)',
                 'en': 'Destination: Calais (Port)',
@@ -89,7 +69,6 @@ export const Koonvoje = () =>{
                 'de': 'Ziel: Calais (Hafen)',
                 'pl': 'Cel: Calais (Port)'
             },
-    
             'Vzdálenost: 1111 km': {
                 'cz': 'Vzdálenost: 1111 km',
                 'en': 'Distance: 1111 km',
@@ -114,7 +93,6 @@ export const Koonvoje = () =>{
                 'de': 'Entfernung: 1111 km',
                 'pl': 'Odległość: 1111 km'
             },
-    
             'Pauza: Ne': {
                 'cz': 'Pauza: Ne',
                 'en': 'Break: No',
@@ -127,7 +105,7 @@ export const Koonvoje = () =>{
                 'de': 'Pause: Nein',
                 'pl': 'Przerwa: Nie'
             },
-            'Pausa: Nein': {
+            'Pause: Nein': {
                 'cz': 'Pauza: Ne',
                 'en': 'Break: No',
                 'de': 'Pause: Nein',
@@ -139,7 +117,6 @@ export const Koonvoje = () =>{
                 'de': 'Pause: Nein',
                 'pl': 'Przerwa: Nie'
             },
-            
             'DLC: Ne': {
                 'cz': 'DLC: Ne',
                 'en': 'DLC: No',
@@ -149,7 +126,7 @@ export const Koonvoje = () =>{
             'DLC: No': {
                 'cz': 'DLC: Ne',
                 'en': 'DLC: No',
-                'de': 'DLC: Nein', 
+                'de': 'DLC: Nein',
                 'pl': 'DLC: Nie'
             },
             'DLC: Nein': {
@@ -158,13 +135,6 @@ export const Koonvoje = () =>{
                 'de': 'DLC: Nein',
                 'pl': 'DLC: Nie'
             },
-            'DLC: Nie': {
-                'cz': 'DLC: Ne',
-                'en': 'DLC: No',
-                'de': 'DLC: Nein',
-                'pl': 'DLC: Nie'
-            },
-    
             'Doprovodná vozidla: Ano': {
                 'cz': 'Doprovodná vozidla: Ano',
                 'en': 'Escort vehicles: Yes',
@@ -189,19 +159,6 @@ export const Koonvoje = () =>{
                 'de': 'Begleitfahrzeuge: Ja',
                 'pl': 'Pojazdy eskortujące: Tak'
             },
-    
-            'Server: TBD': {
-                'cz': 'Server: TBD',
-                'en': 'Server: TBD',
-                'de': 'Server: TBD',
-                'pl': 'Serwer: TBD'
-            },
-            'Server: TBD': {
-                'cz': 'Server: TBD',
-                'en': 'Server: TBD',
-                'de': 'Server: TBD',
-                'pl': 'Serwer: TBD'
-            },
             'Server: TBD': {
                 'cz': 'Server: TBD',
                 'en': 'Server: TBD',
@@ -214,12 +171,12 @@ export const Koonvoje = () =>{
                 'de': 'Server: TBD',
                 'pl': 'Serwer: TBD'
             },
-    
             'Sraz: 14:00': {
                 'cz': 'Sraz: 14:00',
                 'en': 'Meetup: 14:00',
                 'de': 'Treffen: 14:00',
-                'pl': 'Spotkanie: 14:00'},
+                'pl': 'Spotkanie: 14:00'
+            },
             'Meetup: 14:00': {
                 'cz': 'Sraz: 14:00',
                 'en': 'Meetup: 14:00',
@@ -238,7 +195,6 @@ export const Koonvoje = () =>{
                 'de': 'Treffen: 14:00',
                 'pl': 'Spotkanie: 14:00'
             },
-    
             'Odjezd: 15:00': {
                 'cz': 'Odjezd: 15:00',
                 'en': 'Departure: 15:00',
@@ -263,7 +219,6 @@ export const Koonvoje = () =>{
                 'de': 'Abfahrt: 15:00',
                 'pl': 'Wyjazd: 15:00'
             },
-            
             'Datum: 23. 6. 2024': {
                 'cz': 'Datum: 23. 6. 2024',
                 'en': 'Date: 23rd June 2024',
@@ -276,30 +231,18 @@ export const Koonvoje = () =>{
                 'de': 'Datum: 23. 6. 2024',
                 'pl': 'Data: 23 czerwca 2024'
             },
-            'Datum: 23. 6. 2024': {
-                'cz': 'Datum: 23. 6. 2024',
-                'en': 'Date: 23rd June 2024',
-                'de': 'Datum: 23. 6. 2024',
-                'pl': 'Data: 23 czerwca 2024'
-            },
             'Data: 23 czerwca 2024': {
                 'cz': 'Datum: 23. 6. 2024',
                 'en': 'Date: 23rd June 2024',
                 'de': 'Datum: 23. 6. 2024',
                 'pl': 'Data: 23 czerwca 2024'
             },
-    
             'Začátek: Glasgow (Slots)': {
                 'cz': 'Začátek: Glasgow (Slots)',
                 'en': 'Start: Glasgow (Slots)',
                 'de': 'Start: Glasgow (Slots)',
                 'pl': 'Początek: Glasgow (Slots)'
             },
-            'Start: Glasgow (Slots)': {
-                'cz': 'Začátek: Glasgow (Slots)',
-                'en': 'Start: Glasgow (Slots)',
-                'de': 'Start: Glasgow (Slots)',
-                'pl': 'Początek: Glasgow (Slots)'},
             'Start: Glasgow (Slots)': {
                 'cz': 'Začátek: Glasgow (Slots)',
                 'en': 'Start: Glasgow (Slots)',
@@ -312,7 +255,6 @@ export const Koonvoje = () =>{
                 'de': 'Start: Glasgow (Slots)',
                 'pl': 'Początek: Glasgow (Slots)'
             },
-    
             'Cíl: Cardiff (Stein Bruch)': {
                 'cz': 'Cíl: Cardiff (Stein Bruch)',
                 'en': 'Destination: Cardiff (Stein Bruch)',
@@ -337,7 +279,6 @@ export const Koonvoje = () =>{
                 'de': 'Ziel: Cardiff (Stein Bruch)',
                 'pl': 'Cel: Cardiff (Stein Bruch)'
             },
-    
             'Vzdálenost: 1048 km': {
                 'cz': 'Vzdálenost: 1048 km',
                 'en': 'Distance: 1048 km',
@@ -361,339 +302,25 @@ export const Koonvoje = () =>{
                 'en': 'Distance: 1048 km',
                 'de': 'Entfernung: 1048 km',
                 'pl': 'Odległość: 1048 km'
-            },
-    
-            'Pauza: Ne': {
-                'cz': 'Pauza: Ne',
-                'en': 'Break: No',
-                'de': 'Pause: Nein',
-                'pl': 'Przerwa: Nie'
-            },
-            'Break: No': {
-                'cz': 'Pauza: Ne',
-                'en': 'Break: No',
-                'de': 'Pause: Nein',
-                'pl': 'Przerwa: Nie'
-            },
-            'Pausa: Nein': {
-                'cz': 'Pauza: Ne',
-                'en': 'Break: No',
-                'de': 'Pause: Nein',
-                'pl': 'Przerwa: Nie'
-            },
-            'Przerwa: Nie': {
-                'cz': 'Pauza: Ne',
-                'en': 'Break: No',
-                'de': 'Pause: Nein',
-                'pl': 'Przerwa: Nie'
-            },
-            
-            'DLC: Ne': {
-                'cz': 'DLC: Ne',
-                'en': 'DLC: No',
-                'de': 'DLC: Nein',
-                'pl': 'DLC: Nie'
-            },
-            'DLC: No': {
-                'cz': 'DLC: Ne',
-                'en': 'DLC: No',
-                'de': 'DLC: Nein', 
-                'pl': 'DLC: Nie'
-            },
-            'DLC: Nein': {
-                'cz': 'DLC: Ne',
-                'en': 'DLC: No',
-                'de': 'DLC: Nein',
-                'pl': 'DLC: Nie'
-            },
-            'DLC: Nie': {
-                'cz': 'DLC: Ne',
-                'en': 'DLC: No',
-                'de': 'DLC: Nein',
-                'pl': 'DLC: Nie'
-            },
-    
-            'Doprovodná vozidla: Ano': {
-                'cz': 'Doprovodná vozidla: Ano',
-                'en': 'Escort vehicles: Yes',
-                'de': 'Begleitfahrzeuge: Ja',
-                'pl': 'Pojazdy eskortujące: Tak'
-            },
-            'Escort vehicles: Yes': {
-                'cz': 'Doprovodná vozidla: Ano',
-                'en': 'Escort vehicles: Yes',
-                'de': 'Begleitfahrzeuge: Ja',
-                'pl': 'Pojazdy eskortujące: Tak'
-            },
-            'Begleitfahrzeuge: Ja': {
-                'cz': 'Doprovodná vozidla: Ano',
-                'en': 'Escort vehicles: Yes',
-                'de': 'Begleitfahrzeuge: Ja',
-                'pl': 'Pojazdy eskortujące: Tak'
-            },
-            'Pojazdy eskortujące: Tak': {
-                'cz': 'Doprovodná vozidla: Ano',
-                'en': 'Escort vehicles: Yes',
-                'de': 'Begleitfahrzeuge: Ja',
-                'pl': 'Pojazdy eskortujące: Tak'
-            },
-    
-            'Server: TBD': {
-                'cz': 'Server: TBD',
-                'en': 'Server: TBD',
-                'de': 'Server: TBD',
-                'pl': 'Serwer: TBD'
-            },
-            'Server: TBD': {
-                'cz': 'Server: TBD',
-                'en': 'Server: TBD',
-                'de': 'Server: TBD',
-                'pl': 'Serwer: TBD'
-            },
-            'Server: TBD': {
-                'cz': 'Server: TBD',
-                'en': 'Server: TBD',
-                'de': 'Server: TBD',
-                'pl': 'Serwer: TBD'
-            },
-            'Serwer: TBD': {
-                'cz': 'Server: TBD',
-                'en': 'Server: TBD',
-                'de': 'Server: TBD',
-                'pl': 'Serwer: TBD'
-            },
-    
-            'Sraz: 14:00': {
-                'cz': 'Sraz: 14:00',
-                'en': 'Meetup: 14:00',
-                'de': 'Treffen: 14:00',
-                'pl': 'Spotkanie: 14:00'},
-            'Meetup: 14:00': {
-                'cz': 'Sraz: 14:00',
-                'en': 'Meetup: 14:00',
-                'de': 'Treffen: 14:00',
-                'pl': 'Spotkanie: 14:00'
-            },
-            'Treffen: 14:00': {
-                'cz': 'Sraz: 14:00',
-                'en': 'Meetup: 14:00',
-                'de': 'Treffen: 14:00',
-                'pl': 'Spotkanie: 14:00'
-            },
-            'Spotkanie: 14:00': {
-                'cz': 'Sraz: 14:00',
-                'en': 'Meetup: 14:00',
-                'de': 'Treffen: 14:00',
-                'pl': 'Spotkanie: 14:00'
-            },
-            'Odjezd: 15:00': {
-                'cz': 'Odjezd: 15:00',
-                'en': 'Departure: 15:00',
-                'de': 'Abfahrt: 15:00',
-                'pl': 'Wyjazd: 15:00'
-            },
-            'Departure: 15:00': {
-                'cz': 'Odjezd: 15:00',
-                'en': 'Departure: 15:00',
-                'de': 'Abfahrt: 15:00',
-                'pl': 'Wyjazd: 15:00'
-            },
-            'Abfahrt: 15:00': {
-                'cz': 'Odjezd: 15:00',
-                'en': 'Departure: 15:00',
-                'de': 'Abfahrt: 15:00',
-                'pl': 'Wyjazd: 15:00'
-            },
-            'Wyjazd: 15:00': {
-                'cz': 'Odjezd: 15:00',
-                'en': 'Departure: 15:00',
-                'de': 'Abfahrt: 15:00',
-                'pl': 'Wyjazd: 15:00'
-            },
-    
-            'Úvod': {
-                'cz': 'Úvod',
-                'en': 'Home',
-                'de': 'Startseite',
-                'pl': 'Strona główna'
-            },
-    
-            'Home': {
-                'cz': 'Úvod',
-                'en': 'Home',
-                'de': 'Startseite',
-                'pl': 'Strona główna'},
-      
-            'Startseite': {
-                'cz': 'Úvod',
-                'en': 'Home',
-                'de': 'Startseite',
-                'pl': 'Strona główna'},
-      
-            'Strona główna': {
-                'cz': 'Úvod',
-                'en': 'Home',
-                'de': 'Startseite',
-                'pl': 'Strona główna'
-            },
-      
-            'Pravidla': {
-                'cz': 'Pravidla',
-                'en': 'Rules',
-                'de': 'Regeln',
-                'pl': 'Zasady'
-            },
-      
-            'Rules': {
-                'cz': 'Pravidla',
-                'en': 'Rules',
-                'de': 'Regeln',
-                'pl': 'Zasady'
-            },
-      
-            'Regeln': {
-                'cz': 'Pravidla',
-                'en':
-                'Rules',
-                'de': 'Regeln',
-                'pl': 'Zasady'
-            },
-      
-            'Zasady': {
-                'cz': 'Pravidla',
-                'en': 'Rules',
-                'de': 'Regeln',
-                'pl': 'Zasady'
-            },
-      
-            'Nábor': {
-                'cz': 'Nábor',
-                'en': 'Recruitment',
-                'de': 'Rekrutierung',
-                'pl': 'Rekrutacja'
-            },
-      
-            'Recruitment': {
-                'cz': 'Nábor',
-                'en': 'Recruitment',
-                'de': 'Rekrutierung',
-                'pl': 'Rekrutacja'
-            },
-      
-            'Rekrutierung': {
-                'cz': 'Nábor',
-                'en': 'Recruitment',
-                'de': 'Rekrutierung',
-                'pl': 'Rekrutacja'
-            },
-      
-            'Rekrutacja': {
-                'cz': 'Nábor',
-                'en': 'Recruitment',
-                'de': 'Rekrutierung',
-                'pl': 'Rekrutacja'
-            },
-      
-            'Konvoje': {
-                'cz': 'Konvoje',
-                'en': 'Convoys',
-                'de': 'Konvois',
-                'pl': 'Konwoje'
-            },
-      
-            'Convoys': {
-                'cz': 'Konvoje',
-                'en': 'Convoys',
-                'de': 'Konvois',
-                'pl': 'Konwoje'
-            },
-      
-            'Konvois': {
-                'cz': 'Konvoje',
-                'en':
-                'Convoys',
-                'de': 'Konvois',
-                'pl': 'Konwoje'
-            },
-      
-            'Konwoje': {
-                'cz': 'Konvoje',
-                'en': 'Convoys',
-                'de': 'Konvois',
-                'pl': 'Konwoje'
-            },
-      
-            'Kontakty': {
-                'cz': 'Kontakty',
-                'en': 'Contacts',
-                'de': 'Kontakte',
-                'pl': 'Łączność'
-            },
-      
-            'Contacts': {
-                'cz': 'Kontakty',
-                'en': 'Contacts',
-                'de': 'Kontakte',
-                'pl': 'Łączność'},
-      
-            'Kontakte': {
-                'cz': 'Kontakty',
-                'en': 'Contacts',
-                'de': 'Kontakte',
-                'pl': 'Łączność'
-            },
-      
-            'Łączność': {
-                'cz': 'Kontakty',
-                'en': 'Contacts',
-                'de': 'Kontakte',
-                'pl': 'Łączność'
-            },
-      
-            'Galerie': {
-                'cz': 'Galerie',
-                'en': 'Gallery',
-                'de': 'Galerie',
-                'pl': 'Galeria'
-            },
-      
-            'Gallery': {
-                'cz': 'Galerie',
-                'en': 'Gallery',
-                'de': 'Galerie',
-                'pl': 'Galeria'
-            },
-      
-            'Galerie': {
-                'cz': 'Galerie',
-                'en': 'Gallery',
-                'de': 'Galerie',
-                'pl': 'Galeria'
-            },
-      
-            'Galeria': {
-                'cz': 'Galerie',
-                'en': 'Gallery',
-                'de': 'Galerie',
-                'pl': 'Galeria'
             }
         };
-    
+
         function translateText(language) {
-            const elements = document.querySelectorAll('#info1 h1, #info1 p,  #info2 h1, #info2 p, ul li a');
+            const elements = document.querySelectorAll('#info1 h1, #info1 p, #info2 h1, #info2 p, ul li a');
             elements.forEach(element => {
                 let originalText = element.textContent.trim();
-                if (translations.hasOwnProperty(originalText)) {
+                if (Object.prototype.hasOwnProperty.call(translations, originalText)) {
                     const translatedText = translations[originalText][language] || translations[originalText]['en'];
                     element.textContent = translatedText;
                 }
             });
         }
+
         // Funkce pro zobrazení nebo skrytí možností jazyka
         arrowDown.addEventListener("click", function() {
             options.classList.toggle("show");
         });
-    
+
         // Nastavení vybraného jazyka při kliknutí na možnost jazyka
         options.addEventListener("click", function(event) {
             const selectedOption = event.target.closest(".language-option");
@@ -708,14 +335,14 @@ export const Koonvoje = () =>{
                 translateText(selectedLanguage); // Volání funkce pro překlad textů
             }
         });
-    
+
         // Skrytí možností jazyka při kliknutí mimo menu
         document.addEventListener("click", function(event) {
-            if (!selector.contains(event.target)) {
+            if (!selector.contains(event.target) && !options.contains(event.target)) {
                 options.classList.remove("show");
             }
         });
-    
+
         // Nastavení vlajky vybraného jazyka na základě localStorage
         flagImages.forEach(flag => {
             if (flag.parentElement.dataset.lang === selectedLanguage) {
@@ -724,7 +351,7 @@ export const Koonvoje = () =>{
                 selectedFlag.appendChild(flag.cloneNode(true));
             }
         });
-    
+
         // Zapamatování si vybrané vlajky jazyka
         flagImages.forEach(flag => {
             flag.addEventListener('click', function() {
@@ -736,7 +363,7 @@ export const Koonvoje = () =>{
                 translateText(selectedLanguage); // Volání funkce pro překlad textů
             });
         });
-    
+
         // Nastavení výchozího jazyka
         translateText(selectedLanguage);
     });

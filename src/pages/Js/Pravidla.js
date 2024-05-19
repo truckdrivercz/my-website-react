@@ -583,13 +583,6 @@ export const Pravidla = () =>{
                 'pl': 'Galeria'
             },
       
-            'Galerie': {
-                'cz': 'Galerie',
-                'en': 'Gallery',
-                'de': 'Galerie',
-                'pl': 'Galeria'
-            },
-      
             'Galeria': {
                 'cz': 'Galerie',
                 'en': 'Gallery',
@@ -602,7 +595,7 @@ export const Pravidla = () =>{
             const elements = document.querySelectorAll(' p, h2, ul li a');
             elements.forEach(element => {
                 let originalText = element.textContent.trim();
-                if (translations.hasOwnProperty(originalText)) {
+                if (Object.prototype.hasOwnProperty.call(translations, originalText)) {
                     const translatedText = translations[originalText][language] || translations[originalText]['en'];
                     element.textContent = translatedText;
                 }
