@@ -6,9 +6,6 @@ export default function Home() {
   document.title = 'VTC Hell Riders';
   return (
     <>
-    <head>
-      <link rel="shortcut icon" href="../Logos/Logvtc.gif" type="image/x-icon" />
-    </head>
       <Flags_dark />
       <Menu/>
       <Animation />
