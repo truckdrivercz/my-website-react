@@ -11,19 +11,19 @@ export default function Flags_dark () {
           <div className="arrow-down"></div>
           <div className="language-options">
             <div className="language-option" data-lang="cz">
-              <img src="./Flag_dark/Flag_of_the_Czech_Republic.svg" alt="Čeština" />
+              <img src="./Flag_dark/Flag_of_the_Czech_Republic.svg"/>
               <span>Čeština</span>
             </div>
             <div className="language-option" data-lang="en">
-              <img src="./Flag_dark/Flag-United-Kingdom.png" alt="English" />
+              <img src="./Flag_dark/Flag-United-Kingdom.png"/>
               <span>English</span>
             </div>
             <div className="language-option" data-lang="de">
-              <img src="../Flag_dark/Flag_Germany.png" alt="Germany" />
+              <img src="../Flag_dark/Flag_Germany.png"/>
               <span>Germany</span>
             </div>
             <div className="language-option" data-lang="pl">
-              <img src="./Flag_dark/polskokopie.png" alt="Polski" />
+              <img src="./Flag_dark/polskokopie.png"/>
               <span>Polski</span>
             </div>
           </div>
