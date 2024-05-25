@@ -1,5 +1,11 @@
-import { Link } from "react-router-dom";
-import "./Menu.css";
+import { Link } from 'react-router-dom';
+import './Menu.css';
+import Discord from '../MenuImages/Dis_bile_logo.png';
+import Instagram from '../MenuImages/Ig_bile_logo.png';
+import Trucksbook from '../MenuImages/Trucksbook.png';
+import Twitch from '../MenuImages/Cernytwitch_logo_jde_do_biliho.png';
+import YouTube from '../MenuImages/Ytb_bile_logo.png';
+import TruckersMP from '../MenuImages/Tmp.png';
 
 export default function Menu() {
   return (
@@ -44,32 +50,32 @@ export default function Menu() {
             </li>
             <li>
               <a href="https://discord.gg/nJ6tbtjbPx">
-                <img src="./Dis_bile_logo.png"/>
+                <img src={Discord} />
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/vtc_hell_riders/">
-                <img src="./Ig_bile_logo.png"/>
+                <img src={Instagram} />
               </a>
             </li>
             <li>
               <a href="https://trucksbook.eu/company/133784">
-                <img src="./Trucksbook.png"/>
+                <img src={Trucksbook} />
               </a>
             </li>
             <li>
               <a href="https://www.twitch.tv/lucianusshow">
-                <img src="./Cernytwitch_logo_jde_do_biliho.png"/>
+                <img src={Twitch} />
               </a>
             </li>
             <li>
               <a href="https://www.youtube.com/@lucianusshow2942">
-                <img src="./Ytb_bile_logo.png"/>
+                <img src={YouTube} />
               </a>
             </li>
             <li>
               <a href="https://truckersmp.com/vtc/56889">
-                <img src="./Tmp.png"/>
+                <img src={TruckersMP} />
               </a>
             </li>
           </ul>
@@ -80,6 +86,7 @@ export default function Menu() {
           <div></div>
         </label>
       </header>
+      
     </>
   );
 }

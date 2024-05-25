@@ -2,6 +2,7 @@ import "./Nabor.css"
 import Menu from"../Menu/Menu"
 import Animation from "../AnimationFrames/Animation"
 import Flags_dark from "../Flag_dark/Flags_dark"
+import Footer from "../Footer/Footer"
 export default function Nabor(){
     document.title = "Nábor"
     return(
@@ -46,11 +47,7 @@ export default function Nabor(){
                 </div>
             </div>
         </div>
-        <footer className="footer">
-        <div>
-            <h1 className="footerTitle"><a href="https://trucksbook.eu/company/133784"><span className="odkaz">VTC Hell Riders</span></a> | Eduard Orvoš | Ondřej Fíla</h1>
-        </div>
-    </footer>
+        <Footer/>
         </>
     )
 }

@@ -2,6 +2,7 @@ import "./Konvoje.css"
 import Menu from "../Menu/Menu"
 import Animation from "../AnimationFrames/Animation"
 import Flags_dark from "../Flag_dark/Flags_dark"
+import Footer from "../Footer/Footer"
 export default function Konvoje(){
     document.title = "Konvoje"
     return(
@@ -45,11 +46,7 @@ export default function Konvoje(){
             <p><a className="rezervace" href="https://hub.indiantruckers.company/slotimages/psgdseo.jpg">Public slot</a></p>
         </div>
     </div>
-    <footer className="footer">
-        <div>
-            <h1 className="footerTitle"><a href="https://trucksbook.eu/company/133784"><span className="odkaz">VTC Hell Riders</span></a> | Eduard Orvoš | Ondřej Fíla</h1>
-        </div>
-    </footer>
+    <Footer/>
         </>
     )
 }

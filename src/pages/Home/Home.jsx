@@ -1,6 +1,7 @@
 import Animation from "../AnimationFrames/Animation";
 import Menu from "../Menu/Menu";
 import Flags_dark from "../Flag_dark/Flags_dark";
+import Footer from "../Footer/Footer";
 import './Home.css';
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Flags_dark />
-      <Menu/>
+      <Menu />
       <Animation />
       <div id="flexWrap">
         <div id="firstWrap">
@@ -31,11 +32,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className="footer">
-        <div>
-            <h1 className="footerTitle"><a href="https://trucksbook.eu/company/133784"><span className="odkaz">VTC Hell Riders</span></a> | Eduard Orvoš | Ondřej Fíla</h1>
-        </div>
-    </footer>
+      <Footer />
     </>
   );
 }

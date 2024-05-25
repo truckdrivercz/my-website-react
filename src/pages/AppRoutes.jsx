@@ -5,7 +5,6 @@ import Nabor from "./Nábor/Nabor";
 import Konvoje from "./Konvoje/Konvoje";
 import Kontakty from "./Kontakty/Kontakty";
 import Galerie from "./Galerie/Galerie";
-
 export default function AppRoutes() {
   return (
     <BrowserRouter>
