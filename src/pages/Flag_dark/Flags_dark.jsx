@@ -19,7 +19,7 @@ export default function Flags_dark () {
               <span>English</span>
             </div>
             <div className="language-option" data-lang="de">
-              <img src="../Flag_dark/Flag_Germany.png"/>
+              <img src="./Flag_dark/Flag_Germany.png"/>
               <span>Germany</span>
             </div>
             <div className="language-option" data-lang="pl">

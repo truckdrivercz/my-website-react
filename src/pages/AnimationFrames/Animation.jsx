@@ -2,16 +2,23 @@ import "./Animation.css"
 export default function Animation (){
     return (
         <>
-        <div className="arrow bounce"></div>
-        <div className="konvoje">
-          <div className="animate">
-            <img src="../AnimationFrames/Animation1.png" alt="animation1" />
-            <img src="../AnimationFrames/Animation2.jpg" alt="animation2" />
-            <img src="../AnimationFrames/Animation3.jpg" alt="animation3" />
-            <img src="../AnimationFrames/Animation4.png" alt="animation4" />
-            <img src="../AnimationFrames/Animation5.jpg" alt="animation5" />
+          <div className="gallery">
+            <img src="./AnimationFrames/Animation1.png" className="active" />
+            <img src="./AnimationFrames/Animation2.jpg" />
+            <img src="./AnimationFrames/Animation3.jpg" />
+            <img src="./AnimationFrames/Animation4.png" />
+            <img src="./AnimationFrames/Animation5.jpg" />
           </div>
+
+        <div className="navigation">
+            <button className="active" data-index="0"></button>
+            <button data-index="1"></button>
+            <button data-index="2"></button>
+            <button data-index="3"></button>
+            <button data-index="4"></button>
         </div>
+        <div className="arrow"></div>
+        <script src="./Animate.js"></script>
         </>
     )
 }

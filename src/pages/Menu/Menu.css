@@ -91,7 +91,6 @@ a {
 }
 
 
-
 @media only screen and (max-width: 1550px) {
     .hamburger {
         display: block;
@@ -130,31 +129,6 @@ a {
 
 @media screen and (max-width: 800px) {
     .logo a {
-        font-size: 15px;
-    }
-}
-.footer {
-    margin-top: 100px;
-    background-color: rgb(80, 1, 1);
-    color: white;
-    padding: 50px 30px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer a {
-    color: red;
-    background-color: unset;
-}
-@media screen and (max-width: 1200px) {
-    .footerTitle {
-        font-size: 22px;
-    }
-}
-@media screen and (max-width: 576px) {
-    .footerTitle {
         font-size: 15px;
     }
 }

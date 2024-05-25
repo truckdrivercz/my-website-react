@@ -2,6 +2,7 @@ import Animation from "../AnimationFrames/Animation";
 import Menu from "../Menu/Menu";
 import Flags_dark from "../Flag_dark/Flags_dark";
 import './Home.css';
+
 export default function Home() {
   document.title = 'VTC Hell Riders';
   return (
@@ -32,7 +33,7 @@ export default function Home() {
       </div>
       <footer className="footer">
         <div>
-            <h1 className="footerTitle"><a href="https://trucksbook.eu/company/133784"><span id="odkaz">VTC Hell Riders</span></a> | Eduard Orvoš | Ondřej Fíla</h1>
+            <h1 className="footerTitle"><a href="https://trucksbook.eu/company/133784"><span className="odkaz">VTC Hell Riders</span></a> | Eduard Orvoš | Ondřej Fíla</h1>
         </div>
     </footer>
     </>

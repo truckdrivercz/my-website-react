@@ -1,74 +1,75 @@
+import { Link } from "react-router-dom";
 import "./Menu.css";
+
 export default function Menu() {
   return (
     <>
-
       <header>
         <div className="logo">
-          <a href="../Home/Home.jsx">VTC Hell Riders</a>
+          <Link to="/Home/Home.jsx">VTC Hell Riders</Link>
         </div>
 
         <input type="checkbox" id="nav_check" hidden />
         <nav>
           <ul>
             <li>
-              <a href="../Home/Home.jsx" className="active" id="uvod-1">
+              <Link to="/Home/Home.jsx" className="active" id="uvod-1">
                 Úvod
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="../Pravidla/Pravidla.jsx" id="pravidla-1">
+              <Link to="/Pravidla/Pravidla.jsx" id="pravidla-1">
                 Pravidla
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="../Nábor/Nabor.jsx" id="nabor-1">
+              <Link to="/Nábor/Nabor.jsx" id="nabor-1">
                 Nábor
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="../Konvoje/Konvoje.jsx" id="konvoje-1">
+              <Link to="/Konvoje/Konvoje.jsx" id="konvoje-1">
                 Konvoje
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="../Kontakty/Kontakty.jsx" id="kontakty-1">
+              <Link to="/Kontakty/Kontakty.jsx" id="kontakty-1">
                 Kontakty
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="../Galerie/Galerie.jsx" id="galerie-1">
+              <Link to="/Galerie/Galerie.jsx" id="galerie-1">
                 Galerie
-              </a>
+              </Link>
             </li>
             <li>
               <a href="https://discord.gg/nJ6tbtjbPx">
-              <img src="../Logos/Dis_bile_logo.png"/>
+                <img src="./Dis_bile_logo.png"/>
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/vtc_hell_riders/">
-                <img src="../Logos/Ig_bile_logo.png"/>
+                <img src="./Ig_bile_logo.png"/>
               </a>
             </li>
             <li>
               <a href="https://trucksbook.eu/company/133784">
-                <img src="../Logos/Trucksbook.png"/>
+                <img src="./Trucksbook.png"/>
               </a>
             </li>
             <li>
               <a href="https://www.twitch.tv/lucianusshow">
-                <img src="../Logos/Cernytwitch_logo_jde_do_biliho.png"/>
+                <img src="./Cernytwitch_logo_jde_do_biliho.png"/>
               </a>
             </li>
             <li>
               <a href="https://www.youtube.com/@lucianusshow2942">
-                <img src="../Logos/Ytb_bile_logo.png"/>
+                <img src="./Ytb_bile_logo.png"/>
               </a>
             </li>
             <li>
               <a href="https://truckersmp.com/vtc/56889">
-                <img src="../Logos/Tmp.png"/>
+                <img src="./Tmp.png"/>
               </a>
             </li>
           </ul>

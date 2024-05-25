@@ -1,14 +1,14 @@
 import "./Konvoje.css"
-import "../Css/Flags.css"
-import "../Css/Style.css"
 import Menu from "../Menu/Menu"
 import Animation from "../AnimationFrames/Animation"
-import Footer from "../Footer/Footer"
+import Flags_dark from "../Flag_dark/Flags_dark"
 export default function Konvoje(){
+    document.title = "Konvoje"
     return(
         <>
         <Menu/>
         <Animation/>
+        <Flags_dark/>
             <div id="main">
         <div id="info1">
             <h1>ITVTC 41ST PUBLIC CONVOY</h1>
@@ -45,7 +45,11 @@ export default function Konvoje(){
             <p><a className="rezervace" href="https://hub.indiantruckers.company/slotimages/psgdseo.jpg">Public slot</a></p>
         </div>
     </div>
-    <Footer/>
+    <footer className="footer">
+        <div>
+            <h1 className="footerTitle"><a href="https://trucksbook.eu/company/133784"><span className="odkaz">VTC Hell Riders</span></a> | Eduard Orvoš | Ondřej Fíla</h1>
+        </div>
+    </footer>
         </>
     )
 }

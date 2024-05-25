@@ -1,14 +1,14 @@
 import "./Nabor.css"
-import "../Css/Flags.css"
-import "../Css/Style.css"
-import Footer from "../Footer/Footer" 
 import Menu from"../Menu/Menu"
 import Animation from "../AnimationFrames/Animation"
+import Flags_dark from "../Flag_dark/Flags_dark"
 export default function Nabor(){
+    document.title = "Nábor"
     return(
         <>
         <Menu/>
         <Animation/>
+        <Flags_dark/>
                 <div id="flexWrap">
             <div id="firstWrap">
                 <div id="requirements">
@@ -46,7 +46,11 @@ export default function Nabor(){
                 </div>
             </div>
         </div>
-        <Footer/>
+        <footer className="footer">
+        <div>
+            <h1 className="footerTitle"><a href="https://trucksbook.eu/company/133784"><span className="odkaz">VTC Hell Riders</span></a> | Eduard Orvoš | Ondřej Fíla</h1>
+        </div>
+    </footer>
         </>
     )
 }
