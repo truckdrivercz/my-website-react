@@ -4,11 +4,9 @@ import Czech from "../Flags_images/Flag_of_the_Czech_Republic.svg"
 import English from "../Flags_images/Flag-United-Kingdom.png"
 import Germany from "../Flags_images/Flag_Germany.png"
 import Poland from "../Flags_images/Polskokopie.png"
-
 export default function Flags_dark () {
     return(
         <>
-
         <div className="flags">
         <div className="language-selector">
           <div className="selected-language">

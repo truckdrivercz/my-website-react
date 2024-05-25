@@ -3,7 +3,6 @@ import Menu from "../Menu/Menu"
 import Animation from "../AnimationFrames/Animation"
 import Flags_dark from "../Flag_dark/Flags_dark"
 import Footer from "../Footer/Footer"
-import Helmets from "../Helmets/Helmets"
 export default function Konvoje(){
     document.title = "Konvoje"
     return(
@@ -11,7 +10,6 @@ export default function Konvoje(){
         <Menu/>
         <Animation/>
         <Flags_dark/>
-        <Helmets/>
             <div id="main">
         <div id="info1">
             <h1>ITVTC 41ST PUBLIC CONVOY</h1>
