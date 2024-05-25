@@ -1,4 +1,3 @@
-export const Pravidla = () =>{
     document.addEventListener("DOMContentLoaded", function() {
         const selector = document.querySelector(".language-selector");
         const options = document.querySelector(".language-options");
@@ -619,4 +618,3 @@ export const Pravidla = () =>{
             translateText(savedLanguage || 'cz');
         });
     });
-}

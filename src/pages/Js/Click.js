@@ -1,4 +1,3 @@
-export const Click = () =>{
     const images = document.querySelectorAll(".image-container img");
 const popupImage = document.querySelector(".popup-image");
 const popupImg = document.querySelector(".popup-image img");
@@ -48,5 +47,4 @@ function updateArrowsVisibility() {
 function updateImageCounter() {
     currentIndexElement.textContent = currentIndex;
     totalCountElement.textContent = images.length;
-}
 }

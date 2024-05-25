@@ -1,4 +1,3 @@
-export const Dark = () =>{
   const body = document.querySelector('body');
 const btn = document.querySelector('.btn');
 const icon = document.querySelector('.btn__icon');
@@ -49,4 +48,3 @@ btn.addEventListener('click', () => {
     icon.classList.remove('animated');
   }, 500)
 })
-}

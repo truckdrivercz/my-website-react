@@ -1,4 +1,3 @@
-export const Galerie = () => {
     document.addEventListener("DOMContentLoaded", function() {
         const selector = document.querySelector(".language-selector");
         const options = document.querySelector(".language-options");
@@ -211,4 +210,3 @@ export const Galerie = () => {
         // Set default language
         translateText(selectedLanguage);
     });
-}

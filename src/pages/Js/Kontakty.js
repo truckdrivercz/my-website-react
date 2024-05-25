@@ -1,5 +1,4 @@
-export const Kontakty = () => {
-    document.addEventListener("DOMContentLoaded", function() {
+     document.addEventListener("DOMContentLoaded", function() {
         const selector = document.querySelector(".language-selector");
         const options = document.querySelector(".language-options");
         const arrowDown = document.querySelector(".arrow-down");
@@ -275,4 +274,3 @@ export const Kontakty = () => {
             translateText(savedLanguage || 'cz');
         });
     });
-}

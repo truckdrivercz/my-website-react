@@ -1,4 +1,3 @@
-export const Nabor = () =>{
     document.addEventListener("DOMContentLoaded", function() {
         const selector = document.querySelector(".language-selector");
         const options = document.querySelector(".language-options");
@@ -797,4 +796,3 @@ export const Nabor = () =>{
             translateText(savedLanguage || 'cz');
         });
     });
-}

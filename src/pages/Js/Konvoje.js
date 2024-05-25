@@ -1,4 +1,3 @@
-export const Konvoje = () => {
     document.addEventListener("DOMContentLoaded", function() {
         const selector = document.querySelector(".language-selector");
         const options = document.querySelector(".language-options");
@@ -367,4 +366,3 @@ export const Konvoje = () => {
         // Nastavení výchozího jazyka
         translateText(selectedLanguage);
     });
-}
