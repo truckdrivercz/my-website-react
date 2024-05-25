@@ -6,7 +6,7 @@ export default function Flags_dark () {
         <div className="flags">
         <div className="language-selector">
           <div className="selected-language">
-            <img src="./Flag_dark/Flag_of_the_Czech_Republic.svg" alt="Czech Republic" />
+            <img src="./Flag_dark/Flag_of_the_Czech_Republic.svg"/>
           </div>
           <div className="arrow-down"></div>
           <div className="language-options">
