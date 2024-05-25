@@ -18,7 +18,6 @@ export default function Animation (){
             <button data-index="4"></button>
         </div>
         <div className="arrow"></div>
-        <script src="./Animate.js"></script>
         </>
     )
 }
