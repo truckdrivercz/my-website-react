@@ -7,7 +7,8 @@ import Kontakty from "./Kontakty/Kontakty";
 import Galerie from "./Galerie/Galerie";
 export default function AppRoutes() {
   return (
-    <BrowserRouter>
+    <>
+        <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Home/Home.jsx" element={<Home />} />
@@ -18,5 +19,7 @@ export default function AppRoutes() {
         <Route path="/Galerie/Galerie.jsx" element={<Galerie />} />
       </Routes>
     </BrowserRouter>
+
+    </>
   );
 }

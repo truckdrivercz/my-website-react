@@ -3,7 +3,7 @@ import Menu from "../Menu/Menu"
 import Animation from "../AnimationFrames/Animation"
 import Flags_dark from "../Flag_dark/Flags_dark"
 import Footer from "../Footer/Footer"
-
+import Helmets from "../Helmets/Helmets"
 // Importing images
 import MedvidekImage from '../Profiles/Medvidek01.png'
 import EdaImage from '../Profiles/EdaO1.png'
@@ -19,6 +19,7 @@ export default function Kontakty(){
         <Menu/>
         <Animation/>
         <Flags_dark/>
+        <Helmets/>
         <h1 className="nadpis">Kontakty</h1>
         <div className="kontakty">
             <div className="medvidek">

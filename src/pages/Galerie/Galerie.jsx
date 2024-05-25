@@ -15,11 +15,12 @@ import Konvoj_23_3_1 from '../Img/Konvoj 23.3_1.png';
 import Konvoj_5_4 from '../Img/Konvoj 5.4.png';
 import Konvoj_5_4_2 from '../Img/Konvoj 5.4_2.png';
 import Konvoj_5_5 from '../Img/Konvoj 5.5.png';
-
+import Helmets from '../Helmets/Helmets';
 export default function Galerie() {
     document.title = "Galerie";
     return (
         <>
+        <Helmets/>
             <Menu />
             <Flags_dark />
             <div className="container">

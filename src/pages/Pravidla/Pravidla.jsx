@@ -3,6 +3,7 @@ import Menu from"../Menu/Menu"
 import Animation from "../AnimationFrames/Animation"
 import Flags_dark from "../Flag_dark/Flags_dark"
 import Footer from "../Footer/Footer"
+import Helmets from "../Helmets/Helmets"
 export default function Pravidla() {
   document.title = "Pravidla"
   return (
@@ -10,6 +11,7 @@ export default function Pravidla() {
     <Menu/>
     <Animation/>
     <Flags_dark/>
+    <Helmets/>
          <div id="wrap">
     <div id="rules">
         <h2 className="secondTitle">Pravidla firmy</h2>

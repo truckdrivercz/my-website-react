@@ -3,14 +3,16 @@ import Menu from "../Menu/Menu";
 import Flags_dark from "../Flag_dark/Flags_dark";
 import Footer from "../Footer/Footer";
 import './Home.css';
-
+import Helmets from "../Helmets/Helmets";
 export default function Home() {
   document.title = 'VTC Hell Riders';
+  
   return (
     <>
       <Flags_dark />
       <Menu />
       <Animation />
+      <Helmets/>
       <div id="flexWrap">
         <div id="firstWrap">
           <div id="informations">
